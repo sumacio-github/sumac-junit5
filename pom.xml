@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.sumac</groupId>
+		<artifactId>sumac-parent</artifactId>
+		<version>1</version>
+	</parent>
+	<artifactId>sumac-junit5</artifactId>
+	<version>1</version>
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>sumac.io parent pom</description>
+	<url>https://github.com/sumacio-github/sumac-junit5</url>
+	<organization>
+		<name>sumac.io</name>
+		<url>http://sumac.io</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>MIT Licenses</name>
+			<url>http://www.opensource.org/licenses/mit-licenses.php</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>ross-stockman</id>
+			<name>Ross Stockman</name>
+			<email>ross@sumac.io</email>
+			<organization>sumac.io</organization>
+			<organizationUrl>https://github.com/sumacio-github/</organizationUrl>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+	<scm>
+		<connection>scm:git:git://github.com/sumacio-github/sumac-junit5.git</connection>
+		<developerConnection>scm:git:ssh://github.com/sumacio-github/sumac-junit5.git</developerConnection>
+		<url>https://github.com/sumacio-github/sumac-junit5</url>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+	</dependencies>
+</project>
