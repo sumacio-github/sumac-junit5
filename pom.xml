@@ -7,10 +7,10 @@
 		<artifactId>sumac-parent</artifactId>
 		<version>1</version>
 	</parent>
+	<version>1.1</version>
 	<artifactId>sumac-junit5</artifactId>
-	<version>1</version>
 	<name>${project.groupId}:${project.artifactId}</name>
-	<description>sumac.io parent pom</description>
+	<description>sumac.io junit 5 dependencies for sumac projects</description>
 	<url>https://github.com/sumacio-github/sumac-junit5</url>
 	<organization>
 		<name>sumac.io</name>
